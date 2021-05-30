@@ -1,0 +1,226 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+nav {
+  height: 5vh;
+  background: salmon;
+}
+
+.logo{
+  margin-left: 30px;
+  float: left;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.cart{
+  margin-right: 30px;
+  float: right;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.cart a {
+  margin:10px;
+}
+
+.store{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 10px;
+}
+
+.item{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: lightblue;
+  padding: 20px;
+
+}
+
+.item h1{
+  display: block;
+  margin: 10px;
+}
+
+.item h2{
+  margin-bottom: 10px;
+}
+
+.item img{
+  height: 50%;
+  width: 50%;
+}
+
+.pages{
+display: inline-block;
+background: green;
+height: 50px;
+margin: 10px;
+padding: 10px;
+ }
+.pagesrest{
+text-align: center;
+width: 20px;
+font-size: 2rem;
+text-decoration: underline;
+color: white;
+font-family: "Noto Mono"
+
+}
+
+.clickedpage{
+  text-align: center;
+  width: 20px;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: black;
+  font-family: "Noto Mono"
+  }
+
+
+.additem form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.additem input{
+margin: 10px;
+width: 400px;
+}
+
+.additem textarea{
+  width: 400px;
+}
+
+.panel{
+  position:absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+}
+
+.removeitem form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.removeitem h3,{
+  margin:30px;
+}
+
+.removeitem input{
+  margin-bottom: 10px;
+}
+
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: relative;
+  float: right;
+  margin: 10px;
+    }
+
+.toggle-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #475569;
+  border-radius: 40px;
+  cursor: pointer;
+    }
+
+.toggle-thumb:before {
+ content: "";
+ height: 26px;
+ width: 26px;
+ position: absolute;
+ left: 4px;
+ bottom: 4px;
+ border-radius: 50%;
+ background-color: lightgreen;
+ transition: .4s all ease;
+   }
+
+ .checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .checkbox:checked + .toggle-thumb:before {
+        transform: translateX(26px);
+        background-color: salm;
+      }
+  label p{
+    position: relative;
+    margin: 20px;
+    right: 40px;
+    }
+
+  .cartitems{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: auto;
+    height: auto;
+  }
+
+
+.cartitems table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 3px;
+
+     }
+
+     .cartitems td{
+         border: 2px solid black;
+         border-collapse: collapse;
+         padding: 10px;
+         width: auto;
+         text-align: center;
+          }
+
+  .cartitems th{
+      border: 2px solid black;
+      border-collapse: collapse;
+      padding: 3px;
+      text-align: left;
+       }
+
+
+     .cartitems td img{
+       display: block;
+       height:50px;
+       width: 50px;
+
+     }
