@@ -6,6 +6,6 @@ if(empty($_SESSION['cart'])){
 }
 
 array_push($_SESSION['cart'], $_GET['id']);
-header("Location: index.php?page=".$_SESSION['page']);
+header("Location:".$_SESSION['page']);
 die();
  ?>
