@@ -48,10 +48,12 @@
                while($row = $result->fetch_assoc() ) {
                 echo "<div class='iteminfo'>";
                 echo "<h1>".$row['name']."</h1>";
+                echo "<div class='centerDescription'>";
                 echo "<h1>Description</h1>";
                 echo "<p>".$row['description']."</p>";
-                echo "<h2>".$row['price']."€</h2>";
                 echo '<a href="add-to-cart.php?id='.$row['id'].'">add to cart</a>';
+                echo "</div>";
+                echo "<h2>".$row['price']."€</h2>";
                 echo "</div>";
            }
             }
