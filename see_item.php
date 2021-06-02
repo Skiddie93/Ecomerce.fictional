@@ -51,7 +51,10 @@
                 echo "<div class='centerDescription'>";
                 echo "<h1>Description</h1>";
                 echo "<p>".$row['description']."</p>";
-                echo '<a href="add-to-cart.php?id='.$row['id'].'">add to cart</a>';
+                echo '<form class="" action="add-to-cart.php?id='.$_GET['id'].'" method="post">';
+                echo '<input class="itemAddToCart" type="submit" name="submit" value="Add to cart">';
+                echo '<input class="quantityCount" type="number" name="quantity" value="1">';
+                echo "</form>";
                 echo "</div>";
                 echo "<h2>".$row['price']."€</h2>";
                 echo "</div>";
@@ -59,10 +62,13 @@
             }
 
 
+
            ?>
 
 
     </div>
+
+
 
   </body>
 </html>
