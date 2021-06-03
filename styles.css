@@ -30,6 +30,23 @@ nav {
   font-size: 1rem;
 }
 
+.cart span{
+  display: inline-block;
+  position: relative;
+  left: -10px;
+  top: 3px;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
 .cart a {
   margin:10px;
 }

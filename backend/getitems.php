@@ -1,5 +1,6 @@
 <?php
-session_start();
+
+
 
 
 $connect = new mysqli('localhost','root','','test');
@@ -7,6 +8,7 @@ $connect = new mysqli('localhost','root','','test');
 if ($connect->connect_error) {
   die("Connection failed: " . $connect->connect_error);
 }
+
 global $page;
 global $results_per_page;
 $results_per_page = 12;
@@ -32,7 +34,5 @@ if ($result->num_rows > 0) {
      echo '</div>';
 }
  }
-
-
 
  ?>
