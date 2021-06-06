@@ -28,9 +28,9 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc() ) {
       echo '<div class="item">';
      echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['picture'] ).'"/> <br>';
-     echo '<h1><a href="see_item.php?id='.$row['id'].'">'.$row['name'].'</h1></a>';
+     echo '<h1><a class="itemName" href="see_item.php?id='.$row['id'].'">'.$row['name'].'</h1></a>';
      echo '<h2>'.$row['price'].'€</h2>';
-     echo '<a href="add-to-cart.php?id='.$row['id'].'">add to cart</a>';
+     echo '<a class="atcButton" href="add-to-cart.php?id='.$row['id'].'">Add to Cart</a>';
      echo '</div>';
 }
  }

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
@@ -34,6 +36,8 @@
 </svg></a>
       </div>
     </nav>
+<div class="whole">
+
 
     <div class="store">
 
@@ -47,6 +51,7 @@
           include 'backend/pages.php'
 
        ?>
+    </div>
     </div>
 
   </body>
