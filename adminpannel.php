@@ -51,7 +51,7 @@
       <h3>Name:</h3>
       <input type="text" name="name" value="" required='required'>
       <h3>Price</h3>
-      <input type="number" name="price" value="" required='required'>
+      <input type="number" step=".01" name="price" value="" required='required'>
       <h3>Product Image</h3>
       <input type="file" name="picture" value="" required='required'>
       <h3>Description</h3>

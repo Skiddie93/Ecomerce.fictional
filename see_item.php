@@ -1,7 +1,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
     <title></title>
@@ -67,7 +67,7 @@
                 echo "<div class='iteminfo'>";
                 echo "<h1>".$row['name']."</h1>";
                 echo "<div class='centerDescription'>";
-                echo "<h1>Description</h1>";
+                echo "<h3>Description:</h3>";
                 echo "<p>".$row['description']."</p>";
                 echo '<form class="" action="add-to-cart.php?id='.$_GET['id'].'" method="post">';
                 echo '<input class="itemAddToCart" type="submit" name="submit" value="Add to cart">';
@@ -76,6 +76,7 @@
                 echo "</div>";
                 echo "<h2>".$row['price']."€</h2>";
                 echo "</div>";
+                echo "<div class='productId'>Porduct ID:".$row['id']."</div>";
            }
             }
 
